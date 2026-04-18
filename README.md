@@ -1,6 +1,6 @@
 # ⚡ Power Management Backend
 
-A production-structured REST API for ingesting, storing, analysing, and alerting on real-time telemetry from power devices  solar panels, battery systems, or any IoT-connected power source.
+A production-structured REST API for ingesting, storing, analysing, and alerting on real-time telemetry from power devices such as solar panels, battery systems, or any IoT-connected power source.
 
 Built with **Django 6**, **Django REST Framework**, and **PostgreSQL**.
 
