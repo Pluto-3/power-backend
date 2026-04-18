@@ -62,13 +62,13 @@ class DeviceAlertsView(APIView):
     def get(self, request, device_id):
         try:
             device = Device.objects.get(id=device_id)
-            Alerts = Alert.objects.filter(device=device).order_by('-timestamp')[:20]
+            alerts = Alert.objects.filter(device=device).order_by('-created_at')[:20]
             data = [{
                 'alert_type': a.alert_type,
                 'message': a.message,
                 'resolved': a.resolved,
                 'created_at': a.created_at,
-            } for a in Alerts]
+            } for a in alerts]
             return Response(data)
         except Device.DoesNotExist:
             return Response({'error': 'Device not found'}, status=status.HTTP_404_NOT_FOUND)

@@ -26,4 +26,4 @@ if __name__ == "__main__":
     while True:
         reading = generate_reading()
         send_reading(reading)
-        time.sleep(3)
+        time.sleep(1)
