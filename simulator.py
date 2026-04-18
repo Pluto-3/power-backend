@@ -4,7 +4,7 @@ import time
 import uuid
 
 BASE_URL = "http://127.0.0.1:8002/api"
-DEVICE_ID = "0bdf1259-cfad-4530-9844-5a8dd20e3c8e"
+DEVICE_ID = "c813e95c-a3dc-423b-a14d-ccb5d4108b1e"
 
 def generate_reading():
     return {
